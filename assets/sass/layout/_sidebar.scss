@@ -8,7 +8,7 @@
 
 	#sidebar {
 		@include padding(2.5em, 2.5em);
-		background: _palette(bg);
+		background: lighten(_palette(bg), 5);
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -68,7 +68,7 @@
 			a {
 				@include vendor('transition', 'color #{_duration(transition)} ease');
 				border: 0;
-				color: _palette(fg-light);
+				color: _palette(link);
 				display: block;
 				font-size: 0.6em;
 				font-weight: _font(weight-bold);
@@ -92,7 +92,7 @@
 				}
 
 				&:before {
-					background: lighten(_palette(bg), 5);
+					background: lighten(_palette(link), 5);
 				}
 
 				&:after {
@@ -102,11 +102,11 @@
 				}
 
 				&:hover {
-					color: _palette(fg);
+					color: _palette(link);
 				}
 
 				&.active {
-					color: _palette(fg-bold);
+					color: _palette(accent3);
 
 					&:after {
 						max-width: 100%;
