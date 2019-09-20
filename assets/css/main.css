@@ -2166,7 +2166,7 @@ table {
 /* Sidebar */
 #sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em ;
-  background: #0d0d0d;
+  background: #000000;
   cursor: default;
   height: 100vh;
   left: 0;

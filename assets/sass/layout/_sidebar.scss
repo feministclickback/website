@@ -8,7 +8,7 @@
 
 	#sidebar {
 		@include padding(2.5em, 2.5em);
-		background: lighten(_palette(bg), 5);
+		background: _palette(bg);
 		cursor: default;
 		height: 100vh;
 		left: 0;
