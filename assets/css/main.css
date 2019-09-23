@@ -2109,28 +2109,37 @@ table {
   cursor: default;
   font-family: Proxima Nova, sans-serif;
   padding: 1.75em 2em; }
-  #header > .title {
-    border: 0;
-    color: #14728f;
-    display: block;
-    font-size: 1.25em;
-    font-weight: bold; }
   #header > nav {
     -moz-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    display: flex;
+    justify-content: space-between;
     text-align: right; }
+    #header > nav > .title {
+      border: 0;
+      color: #14728f;
+      display: block;
+      font-size: 1.25em;
+      font-weight: bold;
+      text-align: left; }
     #header > nav > ul {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      #header > nav > ul.main-nav {
+        list-style-type: none;
+        display: none; }
+      #header > nav > ul.active {
+        display: flex; }
       #header > nav > ul > li {
         display: inline-block;
         margin-left: 1.75em;
         padding: 0;
         vertical-align: middle; }
-        #header > nav > ul > li:first-child {
-          margin-left: 0; }
         #header > nav > ul > li a {
           border: 0;
           color: #aa03a4;
@@ -2153,12 +2162,12 @@ table {
       display: block;
       padding: 0 2em;
       text-align: left; }
-      #header .title {
-        font-size: 1.25em;
-        padding: 1em 0; }
       #header > nav {
         border-top: solid 1px #aa03a4;
         text-align: inherit; }
+        #header > nav .title {
+          font-size: 1.25em;
+          padding: 1em 0; }
         #header > nav > ul > li {
           margin-left: 1.5em; }
           #header > nav > ul > li a {

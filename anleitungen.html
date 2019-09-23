@@ -33,17 +33,26 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">feministclickback</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Start</a></li>
-						<li><a href="ueber.html">Über</a></li>
-						<li><a href="#" class="active">Anleitungen</a></li>
-						<li><a href="workshops.html">Workshops</a></li>
-						<li><a href="glossar.html">Glossar</a></li>
-						<li><a href="kontakt.html">Kontakt</a></li>
-						<li><a ref="en/practical-guide.html">English</a></li>
+				<nav class="navbar">
+					<a href="index.html" class="title">feministclickback</a>
+					<ul class="main-nav" id="js-menu">
+						<li><a class="nav-links" href="index.html">Start</a></li>
+						<li><a class="nav-links" href="ueber.html">Über</a></li>
+						<li><a class="nav-links" href="#" class="active">Anleitungen</a></li>
+						<li><a class="nav-links" href="workshops.html">Workshops</a></li>
+						<li><a class="nav-links" href="glossar.html">Glossar</a></li>
+						<li><a class="nav-links" href="kontakt.html">Kontakt</a></li>
+						<li><a class="nav-links" ref="en/practical-guide.html">English</a></li>
 					</ul>
+					<span class="navbar-toggle" id="js-navbar-toggle">
+						<i class="fa fa-bars"></i>
+					</span>
+					<script>
+					let mainNav = document.getElementById('js-menu');let navBarToggle = document.getElementById('js-navbar-toggle');
+					navBarToggle.addEventListener('click', function () {
+
+    			mainNav.classList.toggle('active');});
+					</script>
 				</nav>
 			</header>
 

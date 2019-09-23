@@ -13,21 +13,38 @@
 		font-family: _font(headings);
 		padding: 1.75em 2em;
 
-		> .title {
-			border: 0;
-			color: _palette(fg-bold);
-			display: block;
-			font-size: 1.25em;
-			font-weight: _font(weight-bold);
-		}
 
 		> nav {
+			> .title {
+				border: 0;
+				color: _palette(fg-bold);
+				display: block;
+				font-size: 1.25em;
+				font-weight: _font(weight-bold);
+				text-align: left;
+			}
+
 			@include vendor('flex', '1');
+			display: flex;
+			justify-content: space-between;
 			text-align: right;
 
+
 			> ul {
+
 				margin: 0;
 				padding: 0;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+
+				&.main-nav {
+	    		list-style-type: none;
+	    		display: none;
+					}
+				&.active {
+	  			display: flex;
+					}
 
 				> li {
 					display: inline-block;
@@ -36,7 +53,7 @@
 					vertical-align: middle;
 
 					&:first-child {
-						margin-left: 0;
+
 					}
 
 					a {
@@ -71,14 +88,16 @@
 			padding: 0 2em;
 			text-align: left;
 
-			.title {
-				font-size: 1.25em;
-				padding: 1em 0;
-			}
+
 
 			> nav {
 				border-top: solid 1px _palette(border);
 				text-align: inherit;
+
+				.title {
+					font-size: 1.25em;
+					padding: 1em 0;
+				}
 
 				> ul {
 					> li {
