@@ -32,7 +32,9 @@
 		}
 
 		&.style1 {
-			background-color: _palette(accent1);
+			// background-color: _palette(accent1);
+			background-image: url("images/background.svg");
+			background-size: 100%;
 		}
 
 		&.style1-alt {
