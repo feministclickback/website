@@ -8,14 +8,14 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		background-color: _palette(bg);
+		background-color: _palette(accent1);
 		cursor: default;
 		font-family: _font(headings);
 		padding: 1.75em 2em;
 
 		> .title {
 			border: 0;
-			color: _palette(link);
+			color: _palette(fg-bold);
 			display: block;
 			font-size: 1.25em;
 			font-weight: _font(weight-bold);
@@ -54,6 +54,8 @@
 
 						&.active {
 							color: _palette(accent3);
+							background-color: _palette(bg);
+							padding: 0.5em 1.7em;
 						}
 					}
 				}

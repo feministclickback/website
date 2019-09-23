@@ -2019,7 +2019,8 @@ table {
   .wrapper.alt {
     background-color: #116079; }
   .wrapper.style1 {
-    background-color: #ffffff; }
+    background-image: url("images/background.svg");
+    background-size: 100%; }
   .wrapper.style1-alt {
     background-color: #e6e6e6; }
   .wrapper.style2 {
@@ -2104,13 +2105,13 @@ table {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #000000;
+  background-color: #ffffff;
   cursor: default;
   font-family: Proxima Nova, sans-serif;
   padding: 1.75em 2em; }
   #header > .title {
     border: 0;
-    color: #aa03a4;
+    color: #14728f;
     display: block;
     font-size: 1.25em;
     font-weight: bold; }
@@ -2141,7 +2142,9 @@ table {
           #header > nav > ul > li a:hover {
             color: #aa03a4; }
           #header > nav > ul > li a.active {
-            color: #d4fa08; }
+            color: #d4fa08;
+            background-color: #000000;
+            padding: 0.5em 1.7em; }
   @media screen and (max-width: 736px) {
     #header {
       padding: 1em 2em; } }
