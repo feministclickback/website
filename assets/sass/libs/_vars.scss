@@ -1,3 +1,37 @@
+// Font.
+@font-face {
+    font-family: 'Athelas Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Regular'), url('assets/fonts/Athelas-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Athelas Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Italic'), url('assets/fonts/Athelas-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Athelas Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold'), url('assets/fonts/Athelas-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Athelas Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Athelas Bold Italic'), url('assets/fonts/Athelas-BoldItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova'), url('assets/fonts/proxima-nova.woff') format('woff');
+}
+
+
+
 // Misc.
 	$misc: (
 		z-index-base:		10000,
@@ -22,14 +56,16 @@
 		inner-width:		75em
 	);
 
-// Font.
+// Fonts.
 	$font: (
-		family:				(Arial, Helvetica, sans-serif),
+		family:				(Athelas Regular, serif),
+		headings:				(Proxima Nova, sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				normal,
 		weight-bold:		bold,
 		kerning-alt:		0.25em
 	);
+
 
 // Palette.
 	$palette: (

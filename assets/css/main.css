@@ -1,4 +1,29 @@
 @import url(font-awesome.min.css);
+@font-face {
+  font-family: 'Athelas Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Athelas Regular"), url("assets/fonts/Athelas-Regular.woff") format("woff"); }
+@font-face {
+  font-family: 'Athelas Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Athelas Italic"), url("assets/fonts/Athelas-Italic.woff") format("woff"); }
+@font-face {
+  font-family: 'Athelas Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Athelas Bold"), url("assets/fonts/Athelas-Bold.woff") format("woff"); }
+@font-face {
+  font-family: 'Athelas Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Athelas Bold Italic"), url("assets/fonts/Athelas-BoldItalic.woff") format("woff"); }
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Proxima Nova"), url("assets/fonts/proxima-nova.woff") format("woff"); }
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -75,7 +100,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #000000; }
+  background: #ffffff; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -89,31 +114,31 @@ body {
 /* Type */
 body, input, select, textarea {
   color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16.5pt;
+  font-family: Athelas Regular, serif;
+  font-size: 18.5pt;
   font-weight: normal;
   line-height: 1.75; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
-      font-size: 13pt; } }
+      font-size: 15pt; } }
   @media screen and (max-width: 1280px) {
     body, input, select, textarea {
-      font-size: 12pt; } }
+      font-size: 14pt; } }
   @media screen and (max-width: 360px) {
     body, input, select, textarea {
-      font-size: 11pt; } }
+      font-size: 13pt; } }
 
 a {
   -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  border-bottom: dotted 1px rgba(170, 3, 164, 0.35);
+  border-bottom: solid 2.5px #aa03a4;
   color: inherit;
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent;
-    color: #14728f; }
+    color: #aa03a4; }
 
 strong, b {
   color: #14728f;
@@ -127,6 +152,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #14728f;
+  font-family: Proxima Nova, sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 0.5em 0; }
@@ -135,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none; }
 
 h1 {
-  font-size: 2.75em; }
+  font-size: 2em; }
   h1.major {
     margin: 0 0 1.3em 0;
     position: relative;
@@ -158,19 +184,19 @@ h1 {
       width: 100%; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.5em; }
 
 h3 {
-  font-size: 1.1em; }
+  font-size: 0.75em; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 0.75em; }
 
 h5 {
-  font-size: 0.8em; }
+  font-size: 0.5em; }
 
 h6 {
-  font-size: 0.6em; }
+  font-size: 0.5em; }
 
 @media screen and (max-width: 736px) {
   h1 {
@@ -1035,6 +1061,7 @@ button,
   color: #aa03a4 !important;
   cursor: pointer;
   display: inline-block;
+  font-family: Proxima Nova, sans-serif;
   font-size: 0.6em;
   font-weight: bold;
   height: calc(4.75em + 2px);
@@ -2077,12 +2104,13 @@ table {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #ffffff;
+  background-color: #000000;
   cursor: default;
+  font-family: Proxima Nova, sans-serif;
   padding: 1.75em 2em; }
   #header > .title {
     border: 0;
-    color: #14728f;
+    color: #aa03a4;
     display: block;
     font-size: 1.25em;
     font-weight: bold; }
@@ -2104,16 +2132,16 @@ table {
           margin-left: 0; }
         #header > nav > ul > li a {
           border: 0;
-          color: rgba(170, 3, 164, 0.35);
+          color: #aa03a4;
           display: inline-block;
           font-size: 0.6em;
           font-weight: bold;
           letter-spacing: 0.25em;
           text-transform: uppercase; }
           #header > nav > ul > li a:hover {
-            color: #000000; }
+            color: #aa03a4; }
           #header > nav > ul > li a.active {
-            color: #14728f; }
+            color: #d4fa08; }
   @media screen and (max-width: 736px) {
     #header {
       padding: 1em 2em; } }
@@ -2167,6 +2195,7 @@ table {
 #sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em ;
   background: #000000;
+  font-family: Proxima Nova, sans-serif;
   cursor: default;
   height: 100vh;
   left: 0;

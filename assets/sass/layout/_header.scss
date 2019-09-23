@@ -8,13 +8,14 @@
 
 	#header {
 		@include vendor('display', 'flex');
-		background-color: _palette(accent1);
+		background-color: _palette(bg);
 		cursor: default;
+		font-family: _font(headings);
 		padding: 1.75em 2em;
 
 		> .title {
 			border: 0;
-			color: _palette(fg-bold);
+			color: _palette(link);
 			display: block;
 			font-size: 1.25em;
 			font-weight: _font(weight-bold);
@@ -40,7 +41,7 @@
 
 					a {
 						border: 0;
-						color: _palette(fg-light);
+						color: _palette(link);
 						display: inline-block;
 						font-size: 0.6em;
 						font-weight: _font(weight-bold);
@@ -48,11 +49,11 @@
 						text-transform: uppercase;
 
 						&:hover {
-							color: _palette(fg);
+							color: _palette(link);
 						}
 
 						&.active {
-							color: _palette(fg-bold);
+							color: _palette(accent3);
 						}
 					}
 				}
