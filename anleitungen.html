@@ -33,25 +33,34 @@
 
 		<!-- Header -->
 			<header id="header">
+				<div class="first-row">
+				<a href="index.html" class="title">feministclickback</a>
+				<span class="navbar-toggle" id="js-navbar-toggle">
+					<div class="menu-bar-container" onclick="iconChange(this)">
+  					<div class="bar1"></div>
+  					<div class="bar2"></div>
+  					<div class="bar3"></div>
+					</div>
+				</div>
 				<nav class="navbar">
-					<a href="index.html" class="title">feministclickback</a>
 					<ul class="main-nav" id="js-menu">
 						<li><a class="nav-links" href="index.html">Start</a></li>
 						<li><a class="nav-links" href="ueber.html">Über</a></li>
-						<li><a class="nav-links" href="#" class="active">Anleitungen</a></li>
+						<li><a class="nav-links active" href="#" class="active">Anleitungen</a></li>
 						<li><a class="nav-links" href="workshops.html">Workshops</a></li>
 						<li><a class="nav-links" href="glossar.html">Glossar</a></li>
 						<li><a class="nav-links" href="kontakt.html">Kontakt</a></li>
 						<li><a class="nav-links" ref="en/practical-guide.html">English</a></li>
 					</ul>
-					<span class="navbar-toggle" id="js-navbar-toggle">
-						<i class="fa fa-bars"></i>
 					</span>
 					<script>
 					let mainNav = document.getElementById('js-menu');let navBarToggle = document.getElementById('js-navbar-toggle');
 					navBarToggle.addEventListener('click', function () {
 
     			mainNav.classList.toggle('active');});
+					function iconChange(x) {
+  					x.classList.toggle("change");
+						}
 					</script>
 				</nav>
 			</header>
