@@ -2178,25 +2178,14 @@ table {
             color: #d4fa08;
             background-color: #000000;
             padding: 0.5em 1.7em; }
-  @media screen and (max-width: 736px) {
-    #header {
-      padding: 1em 2em; } }
   @media screen and (max-width: 480px) {
-    #header {
-      display: block;
-      padding: 0 2em;
-      text-align: left; }
-      #header > nav {
-        border-top: solid 1px #aa03a4;
-        text-align: inherit; }
-        #header > nav .title {
-          font-size: 1.25em;
-          padding: 1em 0; }
-        #header > nav > ul > li {
-          margin-left: 1.5em; }
-          #header > nav > ul > li a {
-            height: 6em;
-            line-height: 6em; } }
+    #header > nav {
+      text-align: inherit; }
+      #header > nav .title {
+        font-size: 1.25em;
+        padding: 1em 0; }
+      #header > nav > ul > li {
+        margin-left: 0; } }
 
 /* Wrapper (main) */
 #sidebar + #wrapper {

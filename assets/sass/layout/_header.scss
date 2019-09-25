@@ -113,18 +113,18 @@
 		}
 
 		@include breakpoint('<=small') {
-			padding: 1em 2em;
+		//	padding: 1em 2em;
 		}
 
 		@include breakpoint('<=xsmall') {
-			display: block;
-			padding: 0 2em;
-			text-align: left;
+		//	display: block;
+			// padding: 0 2em;
+			// text-align: left;
 
 
 
 			> nav {
-				border-top: solid 1px _palette(border);
+				// border-top: solid 1px _palette(border);
 				text-align: inherit;
 
 				.title {
@@ -134,12 +134,12 @@
 
 				> ul {
 					> li {
-						margin-left: 1.5em;
+						margin-left: 0;
 
-						a {
-							height: 6em;
-							line-height: 6em;
-						}
+						// a {
+						//	height: 2em;
+						//	line-height: 6em;
+						//}
 					}
 				}
 			}
