@@ -2102,6 +2102,33 @@ table {
   .wrapper.fade.inactive > .inner, body.is-preload .wrapper.fade > .inner {
     opacity: 0; }
 
+.glossar
+p {
+  display: flex;
+  justify-content: flex-start; }
+
+p span:first-child {
+  width: 30%;
+  color: #14728f;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 1.25em; }
+
+p span:last-child {
+  width: 70%; }
+
+@media screen and (max-width: 736px) {
+  .glossar
+  p {
+    flex-direction: column; }
+
+  p span:first-child {
+    width: 100%;
+    font-family: Proxima Nova, sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 20px; }
+
+  p span:last-child {
+    width: 100%; } }
 /* Header */
 #header {
   display: -moz-flex;
@@ -2190,13 +2217,13 @@ table {
 /* Wrapper (main) */
 #sidebar + #wrapper {
   margin-left: 18em; }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 980px) {
     #sidebar + #wrapper {
-      margin-left: 0;
-      padding-top: 3.5em; } }
+      margin-left: 14em; } }
   @media screen and (max-width: 736px) {
     #sidebar + #wrapper {
-      padding-top: 0; } }
+      padding-top: 0;
+      margin-left: 0; } }
 #header + #wrapper > .wrapper > .inner {
   margin: 0 auto; }
 
@@ -2206,13 +2233,15 @@ table {
   @media screen and (max-width: 1280px) {
     #sidebar + #wrapper + #footer {
       margin-left: 0; } }
-#footer > .inner a {
-  border-bottom-color: #aa03a4; }
-  #footer > .inner a:hover {
-    border-bottom-color: transparent; }
-#footer > .inner .menu {
-  font-size: 0.8em;
-  color: #aa03a4; }
+#footer > .inner {
+  text-align: right; }
+  #footer > .inner a {
+    border-bottom-color: #aa03a4; }
+    #footer > .inner a:hover {
+      border-bottom-color: transparent; }
+  #footer > .inner .menu {
+    font-size: 0.8em;
+    color: #aa03a4; }
 #header + #wrapper + #footer > .inner {
   margin: 0 auto; }
 
@@ -2426,7 +2455,10 @@ table {
     -ms-transform: translateY(2em);
     transform: translateY(2em);
     opacity: 0; }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 980px) {
+    #sidebar {
+      width: 16em; } }
+  @media screen and (max-width: 736px) {
     #sidebar {
       height: 3.5em;
       left: 0;
